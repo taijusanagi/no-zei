@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <AtomsMain>
+    <OrganismsHeader />
     <Nuxt />
-  </div>
+    <OrganismsFooter />
+  </AtomsMain>
 </template>
-
-<style></style>
