@@ -3,11 +3,11 @@ import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-etherscan";
 import "hardhat-typechain";
 import "solidity-coverage";
-import "hardhat-gas-reporter";
-
-const privateKey = process.env.PRIVATE_KEY || "0x0000000000000000000000000000000000000000000000000000000000000000"; // this is to avoid hardhat error
+import "hardhat-gas-reporter"; // this is to avoid hardhat error
 
 import network from "./network.json";
+
+const privateKey = process.env.PRIVATE_KEY || "0x0000000000000000000000000000000000000000000000000000000000000000";
 
 const enableGasReport = !!process.env.ENABLE_GAS_REPORT;
 const enableProduction = process.env.COMPILE_MODE === "production";

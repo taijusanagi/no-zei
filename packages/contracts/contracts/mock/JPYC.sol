@@ -12,7 +12,7 @@ contract JPYC is ERC20 {
 
     uint256 constant mockRate = 250;
 
-    uint _supplyYen = 100000000e18; /* One-Oku-Yen */
+    uint256 _supplyYen = 100000000e18; /* One-Oku-Yen */
 
     constructor() ERC20(_name, _symbol) {
         _mint(address(this), _supplyYen);
