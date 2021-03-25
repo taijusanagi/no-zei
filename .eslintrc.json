@@ -4,12 +4,15 @@
     "node": true
   },
   "extends": [
+    "@nuxtjs/eslint-config-typescript",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "plugin:import/errors"
+    "plugin:import/errors",
+    "plugin:vue/recommended"
   ],
+  "plugins": ["prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2020,
